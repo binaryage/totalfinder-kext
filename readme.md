@@ -23,10 +23,8 @@ Here is what I did in TotalFinder:
 
 Yeah, kernel extension sounds scary. But I didn't find a better solution in user-space. FSEvents are not precious enough (it just reports "something was changed"). BSD kqueues must be registered on per-file basis, so it is not usable in this scenario. In the end of the day that kernel extension turned out to be really light-weight solution. I use KAUTH API to monitor kernel filesystem events. I do it only if TotalFinder is connected and only for renames and deletes. Testing is simple C-string comparison and sending notification via socket.
 
-I'm using TotalFinder with this redirection enabled for a while and it works pretty well. I've noticed only two drawbacks so far:
+I'm using TotalFinder with this redirection enabled for a while and it works pretty well. I've noticed only one drawbacks so far:
 
-* .DS_Store file is created on Desktop during OSX restart, Finder crash or TotalFinder reinstallation
-  The reason is that SIMBL plugin gets injected too late and Finder manages to write this .DS_Store file
 * .DS_Store file is created when you modify Spotlight comment on a file
   This is caused by mdworker process and has no direct relation to Finder.app process. 
   It seems like Apple engineers scattered DS_Store functionality into more applications.
