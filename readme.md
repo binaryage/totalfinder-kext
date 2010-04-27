@@ -32,4 +32,4 @@ I'm using TotalFinder with this redirection enabled for a while and it works pre
 
 ## Visit [totalfinder.binaryage.com](http://totalfinder.binaryage.com)
 
-#### License: [MIT-Style](license.txt)
+#### License: [MIT-Style](totalfinder-kext/raw/master/license.txt)
