@@ -150,7 +150,11 @@
 			};
 			buildConfigurationList = 1DEB91C708733DAC0010E9CD /* Build configuration list for PBXProject "TotalFinder-kext" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* echelon */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,7 +231,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = Info.plist;
 				MODULE_NAME = com.binaryage.totalfinder.kext;
 				MODULE_START = echelon_start;
@@ -236,7 +239,6 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = TotalFinder;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx10.6;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "x86_64 i386";
 				WRAPPER_EXTENSION = kext;
@@ -251,14 +253,12 @@
 					x86_64,
 					i386,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = Info.plist;
 				MODULE_NAME = com.binaryage.totalfinder.kext;
 				MODULE_START = echelon_start;
 				MODULE_STOP = echelon_stop;
 				MODULE_VERSION = 1.0.0;
 				PRODUCT_NAME = TotalFinder;
-				SDKROOT = macosx10.6;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
 				VALID_ARCHS = "x86_64 i386";
@@ -273,8 +273,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -284,7 +286,9 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
@@ -298,7 +302,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = /usr/local/bin;
 				PREBINDING = NO;
 				PRODUCT_NAME = TestClient;
 			};
@@ -313,7 +316,6 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = /usr/local/bin;
 				PREBINDING = NO;
 				PRODUCT_NAME = TestClient;
 				ZERO_LINK = NO;
