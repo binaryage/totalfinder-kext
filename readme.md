@@ -16,6 +16,7 @@ Here is what I did in TotalFinder:
 
 * I've redirected low-level filesystem calls which Finder.app does: 
   * Anytime Finder.app is asking to open `/some/folder/.DS_Store` file, I open it as `/usr/local/.dscache/some/folder/_DS_Store`
+  ** since TotalFinder 1.1.8, I'm checking if .DS_Store is present in `/some/folder/` - I'm not doing redirection when present.
   * This way Finder thinks files are at original places but they are being physically created in prefix folder, effectively sandboxing them
   * The only exception is the prefix folder itself, when you go and see it in the Finder, no redirection is applied
 * I've implemented kernel extension Echelon, which monitors folder renames (and deletes) and sends them to TotalFinder
