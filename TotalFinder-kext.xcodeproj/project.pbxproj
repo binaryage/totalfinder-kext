@@ -146,6 +146,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0410;
 				ORGANIZATIONNAME = BinaryAge;
 			};
 			buildConfigurationList = 1DEB91C708733DAC0010E9CD /* Build configuration list for PBXProject "TotalFinder-kext" */;
@@ -272,7 +273,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 			};
 			name = Debug;
@@ -290,7 +290,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 			};
 			name = Release;
@@ -302,11 +301,9 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				PREBINDING = NO;
 				PRODUCT_NAME = TestClient;
 				SKIP_INSTALL = YES;
 			};
@@ -318,10 +315,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				PREBINDING = NO;
 				PRODUCT_NAME = TestClient;
 				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
